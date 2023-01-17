@@ -1,0 +1,124 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#page-head{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #00ABB3;
+}
+
+#page-banner{
+    font-family: 'Pacifico', cursive;
+    font-size: 6rem;
+    user-select: none;
+}
+
+#page-tabs{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 10%;
+}
+
+.tab-link{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.25rem;
+    padding: 5% 12%;
+    border-radius: 15%;
+    transition: 0.35s;
+}
+
+.tab-link:hover{
+    background-color: #3C4048;
+}
+
+.tab-link:selected{
+    background-color: #3C4048;
+}
+
+#page-content{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #EAEAEA;
+}
+
+#intro{
+    display: flex;
+    align-items: center;
+    height: 95%;
+    width: 25%;
+    font-size: 2.25rem;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+#vert-div{
+    height: 95%;
+    background: #00ABB3;
+    border-radius: 35%;
+    border: 2px solid #00ABB3;
+}
+
+#content-extra{
+    height: auto;
+    width: 40%;
+}
+
+.content{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.5rem;
+}
+
+#projects-section{
+
+}
+
+#journal-section{
+
+}
+
+.content-btn{
+    float: right;
+    font-size: 2.5rem;
+    background: none;
+    border: none;
+    color: transparent;
+    -webkit-text-stroke: 2px #3C4048;
+    margin-right: 15%;
+    padding: 2% 2%;
+    transition: 0.35s;
+    border-radius: 10%;
+}
+
+#projects-btn:hover{
+    background: #3C4048;
+    -webkit-text-stroke: 2px #EAEAEA;
+}
+
+#divider{
+    width: 100%;
+    background: #00ABB3;
+    border-radius: 35%;
+    border: 2px solid #00ABB3;
+}
+
+
+#page-footer{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #B2B2B2;
+    font-family: 'IBM Plex Mono', monospace;
+}
