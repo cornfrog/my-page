@@ -11,33 +11,53 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <script src="menu.js"></script>
     </head>
     <body>
         <div id="page-head">
             <div id="page-banner">
                 <span id="banner">Welcome!</span>
             </div>
-            <div id="page-tabs">
+            <div id="page-tabs" class="desktop">
                 <a href="index.html" class="tab-link">Home</a>
                 <a href="pages/projects.html" class="tab-link">Projects</a>
                 <a href="pages/journal.html" class="tab-link">Journal</a>
                 <a href="https://github.com/cornfrog" class="tab-link">GitHub</a>
             </div>
+            <div class="mobile" id="menu" onclick="menu()">
+                <span id="menu-symb">☰</span>
+            </div>
+        </div>
+        <div id="menu-list" class="mobile">
+            <a href="index.html" class="tab-link">Home</a>
+            <a href="pages/projects.html" class="tab-link">Projects</a>
+            <a href="pages/journal.html" class="tab-link">Journal</a>
+            <a href="https://github.com/cornfrog" class="tab-link">GitHub</a>
         </div>
         <div id="page-content">
             <div id="intro">
                 <span>Hello, and welcome to my page! Feel free to check out my projects I create, and journal where I jot things I learn down.</span>
             </div>
             <div id="vert-div"></div>
-            <div id="content-extra" class="content">
+            <div id="content-extra" class="content desktop">
                 <div id="projects-section">
                     Check out my projects here!
                 </div>
                 <button id="projects-btn" class="content-btn" onclick="location.href='pages/projects.html'">►</button>
-                <hr id="divider">
+                <hr id="divider" class="desktop">
                 <div id="journal-section" class="content">
                     Check out my journal logs here!
                 </div>
+                <button id="projects-btn" class="content-btn" onclick="location.href='pages/journal.html'">►</button>
+            </div>
+            <hr id="mob-div" class="mobile">
+            <div class="mobile mob-content" id="mob-projects">
+                <span>Check out my projects here!</span>
+                <button id="projects-btn" class="content-btn" onclick="location.href='pages/projects.html'">►</button>
+            </div>
+            <hr id="mob-div" class="mobile">
+            <div class="mobile mob-content" id="mob-projects">
+                <span>Check out my journal here!</span>
                 <button id="projects-btn" class="content-btn" onclick="location.href='pages/journal.html'">►</button>
             </div>
         </div>
